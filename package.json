@@ -1,0 +1,37 @@
+{
+  "name": "OneIM",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "immutable": "^3.8.1",
+    "isomorphic-fetch": "^2.2.1",
+    "leancloud-realtime": "^3.4.1",
+    "leancloud-storage": "^2.5.0",
+    "moment": "^2.18.1",
+    "prop-types": "^15.5.10",
+    "react": "16.0.0-alpha.6",
+    "react-native": "0.44.2",
+    "react-native-image-picker": "^0.26.3",
+    "react-native-vector-icons": "^4.2.0",
+    "react-navigation": "^1.0.0-beta.11",
+    "react-redux": "^5.0.5",
+    "redux": "^3.6.0",
+    "redux-immutable": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^0.15.3",
+    "reselect": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-jest": "20.0.3",
+    "babel-preset-react-native": "1.9.2",
+    "jest": "20.0.4",
+    "react-test-renderer": "16.0.0-alpha.6"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
