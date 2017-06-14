@@ -10,7 +10,8 @@ import Profile from "./Profile";
 import ProfileSetting from "./ProfileSetting";
 import Discovery from "./Discovery";
 import Chat from "../../chat/Chat";
-import Login from "../../auth/Login";
+import LoginPage from "../../auth/Login";
+import SignUpPage from "../../auth/SignUp";
 import {connect} from "react-redux";
 import {getAuthed, getAuthedUser,getNeedAutoLogin } from "../../auth/selector";
 import {init} from '../utils/leanCloudAPI';
@@ -44,6 +45,11 @@ const StackNav = StackNavigator({
   Home: { screen: MainScreenNavigator },
   Chat: { screen: Chat },
   ProfileSetting: { screen: ProfileSetting },
+});
+
+const Login = StackNavigator({
+  Login: { screen: LoginPage },
+  SignUp: {screen: SignUpPage },
 });
 
 class Home extends Component {

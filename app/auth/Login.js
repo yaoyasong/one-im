@@ -21,6 +21,10 @@ import {connect} from "react-redux";
 import {getLoginLoading} from "./selector";
 
 class Login extends Component {
+  static navigationOptions = {
+    title: '登陆',
+  };
+
   static propTypes = {
     userName: PropTypes.string,
     password: PropTypes.string,
@@ -52,7 +56,9 @@ class Login extends Component {
         <TouchableOpacity style={styles.btnContainer}>
           <Button  style={styles.loginBtn} disabled={loading} onPress={ () => this._onPressCallback() } title={`登录`} />
         </TouchableOpacity>
-        <Text style={styles.tipMsg} >忘记密码？</Text>
+        <TouchableOpacity onPress={this._onSignUp}>
+          <Text style={styles.tipMsg} >注册新用户</Text>
+        </TouchableOpacity>
       </View>
     );
   }
@@ -60,6 +66,10 @@ class Login extends Component {
   _onPressCallback = () => {
     this.props.loginRequest(this.state.userName,this.state.password);
     this.saveAuth();
+  };
+
+  _onSignUp = () => {
+    this.props.navigation.navigate('SignUp');
   };
 
   saveAuth = async () => {
