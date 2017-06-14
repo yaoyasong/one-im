@@ -1,13 +1,9 @@
 import App from "./App";
-import AV from 'leancloud-storage';
-import {AV_APP_ID as appId, AV_APP_KEY as appKey} from './constants';
-
+import LeanCloudAPI from './common/utils/leanCloudAPI';
 
 function setup() {
   //init leancloud sdk
-  AV.initialize(appId,appKey);
-  global.AV = AV;
-
+  LeanCloudAPI.init();
   return App;
 }
 export default setup;

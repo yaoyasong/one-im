@@ -1,0 +1,16 @@
+export const chatIconSelected = require('./images/tab/message_selected.png');
+export const chatIcon = require('./images/tab/message.png');
+export const  addBtnImage = require('./images/add_btn_bg.png');
+export const  searchBtnImage = require('./images/search_btn_bg.png');
+export const contactIcon = require('./images/tab/address_list.png');
+export const contactIconSelected = require('./images/tab/address_list_selected.png');
+export const discoveryIconSelected = require('./images/tab/discovery_selected.png');
+export const discoveryIcon = require('./images/tab/discovery.png');
+export const personIconSelected = require('./images/tab/person_selected.png');
+export const personIcon = require('./images/tab/person.png');
+export const  channelImage = require('./images/menu_channel.png');
+export const  colleageImage = require('./images/menu_colleage.png');
+export const  taskImage = require('./images/menu_task.png');
+export const logoImage = require('./images/logo.png');
+export const manImage = require('./images/man.png');
+export const userGroupImage = require('./images/user_group.png');
